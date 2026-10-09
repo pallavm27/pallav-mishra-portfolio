@@ -1,2 +1,13 @@
 [build]
   publish = "."
+
+# Cache images and fonts for a year (file names change when the images change)
+[[headers]]
+  for = "/*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

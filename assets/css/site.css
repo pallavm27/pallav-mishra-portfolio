@@ -319,13 +319,14 @@ h1,h2,h3,h4,p,blockquote,figure,ul{margin:0}
 .contact-foot a:hover{color:var(--lime)}
 
 /* ---------- 17. Footer and floating WhatsApp ---------- */
+/* WhatsApp button is raised above the Netlify badge in the bottom-right corner so the two never overlap */
 .footer{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:28px max(var(--gutter),calc((100% - var(--max)) / 2));border-top:1px solid var(--line-dark);background:var(--ink);color:var(--white)}
 .footer .brand img{width:150px}
 .footer-links{display:flex;gap:24px;flex-wrap:wrap}
 .footer-links a{color:var(--text-on-dark);transition:color .3s}
 .footer-links a:hover{color:var(--lime)}
 .footer .label{color:var(--muted-on-dark)}
-.wa-float{position:fixed;right:20px;bottom:20px;z-index:120;display:inline-flex;align-items:center;gap:10px;padding:13px 18px;border-radius:999px;background:#25d366;color:#061b0c;font:500 11px/1 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;box-shadow:0 12px 35px rgba(0,0,0,.25);transition:opacity .3s,transform .3s var(--ease)}
+.wa-float{position:fixed;right:20px;bottom:92px;z-index:120;display:inline-flex;align-items:center;gap:10px;padding:13px 18px;border-radius:999px;background:#25d366;color:#061b0c;font:500 11px/1 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;box-shadow:0 12px 35px rgba(0,0,0,.25);transition:opacity .3s,transform .3s var(--ease)}
 .wa-float:hover{transform:translateY(-3px)}
 .wa-float.is-hidden{opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity .3s,transform .3s var(--ease),visibility 0s .3s}
 .wa-float span{font-size:15px}
@@ -484,7 +485,7 @@ h1,h2,h3,h4,p,blockquote,figure,ul{margin:0}
   .detail-grid{grid-template-columns:1fr;gap:8px}
   .detail-box{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:14px 16px}
   .detail-box strong{margin-top:0;text-align:right}
-  .wa-float{right:14px;bottom:14px;padding:12px 15px;font-size:10px}
+  .wa-float{right:14px;bottom:84px;padding:12px 15px;font-size:10px}
   .footer{flex-direction:column;align-items:flex-start}
 }
 
